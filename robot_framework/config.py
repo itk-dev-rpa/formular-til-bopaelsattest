@@ -14,3 +14,6 @@ SCREENSHOT_SENDER = "robot@friend.dk"
 # Constant/Credential names
 ERROR_EMAIL = "Error Email"
 NOVA_API = "Nova API"
+
+
+DATABASE_CONN_STRING = "Driver={ODBC Driver 17 for SQL Server};Server=FaellesSQL;Trusted_Connection=yes;

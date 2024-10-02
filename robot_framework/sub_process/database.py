@@ -3,10 +3,11 @@ from datetime import date
 import pyodbc
 
 from robot_framework.sub_process.word_process import format_date_short
+from robot_framework import config
 
 
 def connect() -> pyodbc.Connection:
-    return pyodbc.connect("Driver={ODBC Driver 17 for SQL Server};Server=FaellesSQL;Trusted_Connection=yes;")
+    return pyodbc.connect(config.DATABASE_CONN_STRING)
 
 
 def get_person_info(cpr: str, connection: pyodbc.Connection) -> dict[str, str]:
